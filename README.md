@@ -2,6 +2,12 @@
 
 A nodejs server dev for Solar Value
 
+## Git
+
+``` git
+git config user.email “wj871287@gmail.com”
+```
+
 ## QuickStart
 
 <!-- add docs here for user -->
