@@ -16,13 +16,26 @@
     <tr>
       <td>新闻列表</td>
       <td>GET</td>
-      <td>调用原生http模块从东方财富爬爬取的行情新闻列表</td>
+      <td>调用原生http模块 <a href="http://simu.eastmoney.com">天天基金网</a> 爬取的行情新闻列表</td>
+      <td align="right"><a href="/api/v2/newsList">http://127.0.0.1:7001/api/v2/newsList</a></td>
+    </tr>
+    <tr>
+      <td>新闻列表</td>
+      <td>GET</td>
+      <td>调用原生http模块 <a href="http://simu.eastmoney.com">天天基金网</a> 爬取的行情新闻列表</td>
+      <td align="right"><a href="/api/v2/newsList">http://127.0.0.1:7001/api/v2/newsList</a></td>
+    </tr>
+    <tr>
+      <td>新闻列表</td>
+      <td>GET</td>
+      <td>调用原生http模块 <a href="http://simu.eastmoney.com">天天基金网</a> 爬取的行情新闻列表</td>
       <td align="right"><a href="/api/v2/newsList">http://127.0.0.1:7001/api/v2/newsList</a></td>
     </tr>
   </tbody>
 </table>
 {# 异步请求渲染结果 #}
 <hr>
+<h2>发起 AJAX 请求</h2>
 <div id="sv-newsList"></div>
 {# 发起AJAX请求获取接口数据并渲染 #}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
