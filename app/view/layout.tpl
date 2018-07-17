@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>FUCrawler</title>
+    <title>sv-egg</title>
   </head>
   <body>
     <h1>Solar Value Nodejs Server</h1>
