@@ -35,7 +35,7 @@
 </table>
 {# 异步请求渲染结果 #}
 <hr>
-<h2>发起 AJAX 请求</h2>
+<h2>从页面发起 AJAX 请求</h2>
 <div id="sv-newsList"></div>
 {# 发起AJAX请求获取接口数据并渲染 #}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
