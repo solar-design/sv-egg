@@ -17,19 +17,19 @@
       <td>新闻列表</td>
       <td>GET</td>
       <td>调用原生http模块 <a href="http://simu.eastmoney.com">天天基金网</a> 爬取的行情新闻列表</td>
-      <td align="right"><a href="/api/v2/newsList">http://127.0.0.1:7001/api/v2/newsList</a></td>
+      <td align="right"><a href="/api/v2/News/GetNewsList">http://127.0.0.1:7001/api/v2/News/GetNewsList</a></td>
     </tr>
     <tr>
       <td>新闻列表</td>
       <td>GET</td>
       <td>调用原生http模块 <a href="http://simu.eastmoney.com">天天基金网</a> 爬取的行情新闻列表</td>
-      <td align="right"><a href="/api/v2/newsList">http://127.0.0.1:7001/api/v2/newsList</a></td>
+      <td align="right"><a href="/api/v2/News/GetNewsList">http://127.0.0.1:7001/api/v2/News/GetNewsList</a></td>
     </tr>
     <tr>
       <td>新闻列表</td>
       <td>GET</td>
       <td>调用原生http模块 <a href="http://simu.eastmoney.com">天天基金网</a> 爬取的行情新闻列表</td>
-      <td align="right"><a href="/api/v2/newsList">http://127.0.0.1:7001/api/v2/newsList</a></td>
+      <td align="right"><a href="/api/v2/News/GetNewsList">http://127.0.0.1:7001/api/v2/News/GetNewsList</a></td>
     </tr>
   </tbody>
 </table>
@@ -89,7 +89,7 @@
   }
   // 实例化组件
   var newsList = new NewsList({
-    url: './api/v2/newsList'
+    url: './api/v2/News/GetNewsList'
   });
   newsList.render(document.getElementById('sv-newsList'));
 </script>

@@ -1,18 +1,17 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-
 class NewsController extends Controller {
   async index() {
-    await this.ctx.render('news.tpl', { state: 'The Restful API about News' });
+    await this.ctx.render('news.tpl', { state: '服务端渲染' });
   }
-  async newsList() {
+  async getNewsList() {
     const newsData = await this.ctx.service.news.newsList(2);
     this.ctx.body = {
       code: 1,
       message: 'success',
-      data: newsData
+      data: newsData,
     };
   }
-}  
+}
 module.exports = NewsController;

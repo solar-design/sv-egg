@@ -18,8 +18,13 @@ module.exports = appInfo => {
     defaultViewEngine: 'nunjucks',
     root: [
       path.join(appInfo.baseDir, 'app/view'),
-      path.join(appInfo.baseDir, 'path/to/another'),
+      path.join(appInfo.baseDir, 'app/public'),
     ].join(','),
+  };
+
+  config.static = {
+    prefix: '/public/',
+    dir: path.join(appInfo.baseDir, 'app/public'),
   };
 
   // 天天基金网-私募基金板块

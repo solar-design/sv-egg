@@ -6,7 +6,12 @@
 module.exports = app => {
   const { router, controller } = app;
   router.get('/', controller.home.index);
-  // 爬取新闻服务
+  router.get('/svapp', controller.home.svapp);
+  // Account 用户信息
+  router.get('/api/v2/Account/Login', controller.account.login);
+  router.get('/api/v2/Account/Logout', controller.account.logout);
+  router.get('/api/v2/Account/GetUserInfo', controller.account.getUserInfo);
+  // News 新闻数据
   router.get('/news', controller.news.index);
-  router.get('/api/v2/newsList', controller.news.newsList);
+  router.get('/api/v2/News/GetNewsList', controller.news.getNewsList);
 };
