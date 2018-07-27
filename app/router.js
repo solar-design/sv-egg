@@ -8,7 +8,7 @@ module.exports = app => {
   router.get('/', controller.home.index);
   router.get('/svapp', controller.home.svapp);
   // Account 用户信息
-  router.get('/api/v2/Account/Login', controller.account.login);
+  router.post('/api/v2/Account/Login', controller.account.login);
   router.get('/api/v2/Account/Logout', controller.account.logout);
   router.get('/api/v2/Account/GetUserInfo', controller.account.getUserInfo);
   // News 新闻数据

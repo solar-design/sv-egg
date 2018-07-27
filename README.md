@@ -2,6 +2,12 @@
 
 A nodejs server dev for Solar Value
 
+## Work Log
+
+- 2018/07/26
+  - 完善接口，`Restful` 化，理解 `CRUD` 后端接口设计
+  - 理解安全威胁 `csrf` 防范，对 `POST` 请求带上 `_csrd` 字段的 `key` 值校验
+   
 ## Git
 
 ``` git

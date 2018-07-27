@@ -8,12 +8,19 @@ class AccountController extends Controller {
    */
   async login() {
     const { username, password } = this.ctx.request.body;
-    console.log(username, password);
-    this.ctx.body = {
-      code: 1,
-      message: 'login success',
-      data: { session: 'wj871287' },
-    };
+    if (username === 'dengdeng@sail-fs.com' && password === 'wj871287') {
+      this.ctx.body = {
+        code: 1,
+        message: 'success',
+        data: { session: username },
+      };
+    } else {
+      this.ctx.body = {
+        code: 0,
+        message: 'error:username or password is wrong',
+        data: [],
+      };
+    }
   }
   /**
    * 接口-注销
